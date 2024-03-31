@@ -6,6 +6,7 @@
     <link href="styling.css" rel="stylesheet" />
     <link href="reset.css" rel="stylesheet" />
     <link href="layout.css" rel="stylesheet" />
+    <link href="scripts.js" rel="script" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,8 +16,8 @@
     <title>Weather App</title>
   </head>
   <body>
-     <div class="card">
-    <div class="search">
+    <div class="card">
+      <div class="search">
         <input
           class="searchInput"
           type="text"
@@ -28,7 +29,7 @@
       <div class="Weather1stinfo">
         <h1 class="temp">🌦️ 27°C</h1>
         <h2 class="city">Asuncion</h2>
-        <h3>Current Date and Time: <span class="datetime"></span></h3>
+        <h3><span class="datetime"></span></h3>
         <form id="search-form">
           <input type="submit" style="display: none" />
         </form>
@@ -40,15 +41,25 @@
           </li>
         </ul>
       </div>
-      
-    
-     <footer class="end">
-      This project was coded by
-      <a href="https://github.com/KATHSIEBERT"> Katharina Siebert </a> and is
-      open source on
-      <a href="https://github.com/KATHSIEBERT/WeatherAppProject"> GitHub </a> and
-      hosted on <a href="https://master--deft-beignet-4f90bd.netlify.app/"> Netlify </a>
-    </footer>
+      <div class="weatherrow">
+        <ul class="weather-row">
+          <li>Mon 🌤️<br /><strong>14°C</strong> -18°C</li>
+          <li>Tue 🌤️<br /><strong>14°C</strong> -18°C</li>
+          <li>Wed 🌤️<br /><strong>14°C</strong> -18°C</li>
+          <li>Thu 🌤️<br /><strong>14°C</strong> -18°C</li>
+          <li>Fri 🌤️<br /><strong>14°C</strong> -18°C</li>
+          <li>Sat 🌤️<br /><strong>14°C</strong> -18°C</li>
+        </ul>
+      </div>
+
+      <footer class="end">
+        This project was coded by
+        <a href="https://github.com/KATHSIEBERT"> Katharina Siebert </a> and is
+        open source on
+        <a href="https://github.com/KATHSIEBERT/WeatherAppProject"> GitHub </a>
+        and hosted on
+        <a href="https://master--deft-beignet-4f90bd.netlify.app/"> Netlify </a>
+      </footer>
     </div>
     <script>
       let weather = {

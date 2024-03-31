@@ -60,6 +60,11 @@ body {
 .details strong {
   color: #f65282;
 }
+.weather-row {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-top: 15px;}
 .footer {
   border-top: 1px solid #f9f7fe;
   padding: 30px 0 0 0;
